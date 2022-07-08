@@ -1,0 +1,105 @@
+.dailySpecial {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(67, 67, 67, 0.9),
+      rgba(67, 67, 67, 0.9)
+    ),
+    url('../../public/dailyspecialbg.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 80px;
+  margin-top: 50px;
+}
+
+.dailySpecial .heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dailySpecial .heading span {
+  background: #f39c12;
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+}
+
+.dailySpecial .heading h5 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #fdfdfd;
+}
+
+.dailySpecial h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  letter-spacing: 2px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: #fdfdfd;
+}
+
+.specialDishes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.specialDishes .specialDish {
+  display: flex;
+  padding: 15px;
+  background: #fdfdfd;
+  margin: 10px;
+  /* border-radius: 10px; */
+}
+
+.specialDishes .specialDish img {
+  width: 150px;
+}
+
+.specialDish .dishInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  color: #333333;
+}
+
+.dishInformation h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.dishInformation p {
+  margin-top: 10px;
+  letter-spacing: 0.1px;
+  color: #727272;
+}
+
+.dishInformation span {
+  color: #f39c12;
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+/* Media queries */
+@media only screen and (max-width: 750px) {
+  .dailySpecial {
+    padding: 50px 8px;
+  }
+  .dailySpecial h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+}
